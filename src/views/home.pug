@@ -9,6 +9,12 @@ html(lang="en")
     body 
         header
             h1 ZOOM CLONE
-        main   
-            h2 Welcome to Zoom Clone
-        script(scc="/public/js/app/js") 
+        main
+            form#nick
+                input(type="text", placeholder="Choose a nickname", required)
+                button Save
+            ul
+            form#message
+                input(type="text", placeholder="Write a Message", required)
+                button Send
+        script(src="../public/js/app.js") 
