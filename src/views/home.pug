@@ -25,5 +25,17 @@ html(lang="en")
                 form#msg
                     input(type="text", placeholder="message", required)
                     button  Send 
+            div#videoWellcome
+                form
+                    input(type="text", required, placeholder="room name")
+                    button  Enter room
+            div#call
+                div#myStream        
+                    video#myFace(autoplay,playsinline,width="400",height="400")        
+                    button#mute Mute
+                    button#camera Turn Camera Off
+                    select#cameras 
+                    video#peerFace(autoplay,playsinline,width="400",height="400")            
         script(src="/socket.io/socket.io.js") 
         script(src="/public/js/app.js") 
+        script(src="/public/js/video.js")
